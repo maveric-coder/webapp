@@ -1,0 +1,559 @@
+    1  cd www/
+    2  ls
+    3  mkdir git-test
+    4  ls
+    5  cd git-test/
+    6  git clone https://github.com/maveric-coder/test.git
+    7  ls
+    8  cd ..
+    9  rm git-test/
+   10  rm -rf git-test/
+   11  ls
+   12  git clone https://github.com/maveric-coder/test.git
+   13  ls 
+   14  cd test/
+   15  ll
+   16  cd ..
+   17  cd html/
+   18  ls
+   19  rm index.html 
+   20  ls
+   21  ll
+   22  cd ..
+   23  ll
+   24  cd test/
+   25  ll
+   26  cp index.html ../html/
+   27  ls
+   28  cp styles.css ../html
+   29  cp -r pics ../html
+   30  cd ..
+   31  ls
+   32  cd html/
+   33  ls
+   34  cd ..
+   35  ls
+   36  cd test/
+   37  git pull
+   38  git log
+   39  ll
+   40  cd ..
+   41  ll
+   42  chmod 731 html/
+   43  ll
+   44  chmod 755 html/
+   45  ll
+   46  chmod 777 html/
+   47  ll
+   48  cd html/
+   49  exit
+   50  rm index.html 
+   51  cd ..
+   52  cd test/
+   53  cp index.html ../html/
+   54  cd ..
+   55  cd html/
+   56  ll
+   57  exit
+   58  cd 
+   59  exit
+   60  logoff
+   61  logout
+   62  exit
+   63  cd /var/www/
+   64  chmod 755 html/
+   65  ll
+   66  git pull
+   67  ping 10.0.0.4
+   68  git status
+   69  git pull
+   70  git log
+   71  top
+   72  top 
+   73  du -sm
+   74  du -sm * | sort -nr | head 10
+   75  du -sm * | sort -nr | head -10
+   76  cd ..
+   77  ll
+   78  chmod 777 html/
+   79  ll
+   80  exit
+   81  ll
+   82  chmod 755 html/
+   83  exit
+   84  ls
+   85  ll
+   86  ls _R
+   87  clear
+   88  ls -R
+   89  exit
+   90  clear
+   91  cat /etc/*release
+   92  clear
+   93  id nick
+   94  id root
+   95  id -a root
+   96  cat /etc/passwd
+   97  su - nick
+   98  su -  lxd
+   99  whoami
+  100  su - lxd
+  101  whoami
+  102  vi /etc/passwd
+  103  clear
+  104  su - lxd
+  105  clear
+  106  cat /etc/passwd
+  107  clear
+  108  useradd -m test1
+  109  id test1
+  110  cat /etc/passwd
+  111  clear
+  112  useradd -c "test user for training" -d /home/test1 test2
+  113  cat /etc/passwd
+  114  clear
+  115  cd /home
+  116  ll
+  117  usermod -d /home/test2 test2
+  118  ll
+  119  cd ..
+  120  cd /home
+  121  ll
+  122  cat /etc/passwd
+  123  ll
+  124  clear
+  125  su - test2
+  126  mkdir test2
+  127  ll
+  128  su - test2
+  129  id -a test2
+  130  id -a nick
+  131  usermod -G dialout test2
+  132  id -a test2
+  133  su - test2
+  134  usermod -g nick  test2
+  135  id -a test2
+  136  su - test2
+  137  cat /etc/sudoers
+  138  clear
+  139  usermod -g admin  test2
+  140  su -  test2
+  141  id -a test2
+  142  id -a nick2
+  143  id -a nick
+  144  usermod -g sudo test2
+  145  su -  test2
+  146  clear
+  147  cat /etc/group
+  148  clear
+  149  cat /etc/shadow
+  150  passwd test2
+  151  cat /etc/shadow
+  152  clear
+  153  chage -l test2
+  154  clear
+  155  passwd -l test2
+  156  chage -l test2
+  157  cat /etc/shadow
+  158  su -  test2
+  159  clear
+  160  passwd -u test2
+  161  cat /etc/shadow
+  162  clear
+  163  history
+  164  cat /etc/passwd
+  165  useradd test3 -m
+  166  cat /etc/passwd
+  167  deluser test3
+  168  userdel tes3
+  169  userdel test3
+  170  cat /etc/passwd
+  171  useradd test3 -m
+  172  userdel -r test3
+  173  cd
+  174  /home
+  175  cd /home
+  176  ll
+  177  useradd test3 -m
+  178  ll
+  179  su - test3
+  180  cd 
+  181  usermod -g admin test3
+  182  cd /home
+  183  ll
+  184  id -a test2
+  185  id -a test3
+  186  usermod -sudo test3
+  187  id -a test3
+  188  ll
+  189  usermod -g sudo test3
+  190  ll
+  191  id -a root
+  192  id -a test2
+  193  id -a test3
+  194  usermod -g dialout  test3
+  195  ll
+  196  usermod -g root test3
+  197  ll
+  198  usermod -u root test3
+  199  su - test2
+  200  su - test3
+  201  userdel -r test3
+  202  ll
+  203  cd
+  204  cat /etc/shadow
+  205  useradd -d /home/test3 test3
+  206  groupdel test3
+  207  lll
+  208  cd /home
+  209  ll
+  210  cd 
+  211  cat /etc/shadow
+  212  useradd test3 -m
+  213  cat /etc/shadow
+  214  id -a root
+  215  id -a test2
+  216  usermod -g sudo test3
+  217  id -a test3
+  218  su - test3
+  219  passwd test3
+  220  su - test3
+  221  cat /etc/shadow
+  222  id -a test3
+  223  id -a test2
+  224  su - test2
+  225  usermod -G dailout test3
+  226  usermod -G dialout test3
+  227  cat /etc/shadow
+  228  id -a test3
+  229  clear
+  230  cd /home/test1/
+  231  ll
+  232  touch test.txt
+  233  ll
+  234  chmod 144 test.txt
+  235  ll test.txt
+  236  chmod 744 test.txt
+  237  ll test.txt
+  238  chmod 777 test.txt 
+  239  ll
+  240  clear
+  241  rm test.txt 
+  242  `ll
+  243  ll
+  244  mkdir -p /test/test1/test2
+  245  ll
+  246  mkdir -p test/test1/test2
+  247  ll
+  248  cd test/
+  249  ll
+  250  cd test1/
+  251  ll
+  252  cd test2/
+  253  ll
+  254  cd -
+  255  cd /home/test1
+  256  clear
+  257  ll
+  258  cd test/
+  259  ll
+  260  cd ..
+  261  ll
+  262  chmod 455 test/
+  263  ll
+  264  cd test/
+  265  ll
+  266  cd ..
+  267  chmod -R 655 test/
+  268  ll
+  269  cd /test/
+  270  ll
+  271  id nick
+  272  pwd
+  273  cd /home/test
+  274  clear
+  275  cd /home/test1
+  276  ll
+  277  touch test.txt
+  278  cat test.txt 
+  279  vi test.txt 
+  280  cat test.txt 
+  281  ll test.txt
+  282  chmod 444 test.txt
+  283  ll
+  284  cat test.txt
+  285  vi test.txt
+  286  clear
+  287  ll
+  288  id test2
+  289  usermod -g test2 test2
+  290  id test2
+  291  clear
+  292  ll
+  293  chown test2:test1 test.txt
+  294  ll
+  295  cat test.txt
+  296  su - test1
+  297  clear
+  298  ll
+  299  cd test/
+  300  ll
+  301  cd test1/
+  302  ll
+  303  cd /home/test1
+  304  ll
+  305  clear
+  306  ps -ef 
+  307  clear
+  308  ps -ef > process.txt
+  309  ll
+  310  cat process.txt
+  311  clear
+  312  free -g 
+  313  free -g  > memory.txt
+  314  cat memory.txt 
+  315  ps -ef >> memory.txt
+  316  cat memory.txt 
+  317  clear
+  318  cat memory.txt 
+  319  clear
+  320  cat memory.txt | more
+  321  clear
+  322  cat memory.txt | wc -l 
+  323  cat memory.txt | wc -lw
+  324  cat memory.txt | wc -w
+  325  clear
+  326  cat -n memory.txt 
+  327  clear
+  328  clear
+  329  cd /home/test
+  330  cd /home/test1
+  331  ll
+  332  vi accenture.txt
+  333  cat accenture.txt 
+  334  vi accenture.txt 
+  335  cat accenture.txt 
+  336  free -g >> accenture.txt
+  337  cat accenture.txt 
+  338  clear
+  339  vi accenture.txt 
+  340  cat accenture.txt 
+  341  vi accenture.txt 
+  342  cd 
+  343  history
+  344  history
+  345  history -d 344
+  346  clear
+  347  less /etc/shadow
+  348  exit
+  349  clear
+  350  cd
+  351  pvs
+  352  lc\vs
+  353  lvs
+  354  vgs
+  355  pvdisplay
+  356  ll
+  357  fdisk -l
+  358  fdisk 
+  359  fdisk -l
+  360  fdisk /dev/sdc
+  361  fdisk -l
+  362  pvs
+  363  pvcreate /dev/sdc1
+  364  pvs
+  365  vgs
+  366  vgcreate vgtest /dev/sdc1
+  367  df -h
+  368  lvs
+  369  lvcreate -n lvtest -L +3G vgtest
+  370  lvs
+  371  cat /etc/fstab 
+  372  ll
+  373  mkdir test
+  374  mkfs.xfs /dev/mapper/vgtest-lvtest 
+  375  mount /dev/mapper/vgtest-lvtest /test
+  376  df -h
+  377  vgs
+  378  cat /etc/fstab 
+  379  cp -p /etc/fstab /etc/fstab_backup
+  380  nano /etc/fstab
+  381  umount /test/
+  382  df -h
+  383  mount /test/
+  384  mount /dev/mapper/vgtest-lvtest /test/
+  385  df -h
+  386  nano /etc/fstab
+  387  mount -a
+  388  df -h
+  389  cd
+  390  fdisk -l
+  391  df -h
+  392  pvs
+  393  lvs
+  394  less /etc/fstab
+  395  less /etc/fstab_backup 
+  396  more /etc/fstab_backup 
+  397  clear
+  398  cat /etc/fstab
+  399  cat /etc/fstab_backup 
+  400  vgs
+  401  lvs
+  402  clear
+  403  lvs
+  404  clea
+  405  clear
+  406  lvs
+  407  cat /etc/fstab
+  408  netstat
+  409  exit
+  410  ll
+  411  cd
+  412  ll
+  413  pwd
+  414  cd
+  415  clear
+  416  pvs
+  417  vgs
+  418  cat /etc/fstab
+  419  systemctl apache status
+  420  systemctl status apache
+  421  systemctl status apache2
+  422  yum
+  423  ls -li
+  424  \
+  425  chkconfig --list
+  426  free -m
+  427  ps -ef
+  428  ps -ef | head -5
+  429  cd /home/
+  430  ll
+  431  cd test1/
+  432  ll
+  433  cat test
+  434  cat test.txt 
+  435  ll
+  436  cat > abc.txt
+  437  cat abc.txt 
+  438  gzip abc.txt 
+  439  ll
+  440  cat abc.txt.gz 
+  441  zcat abc.txt.gz 
+  442  exit
+  443  cd
+  444  ll
+  445  fdisk -l
+  446  pvs
+  447  lvs
+  448  vgs
+  449  fdisk -l
+  450  vgs
+  451  lvs
+  452  pvs
+  453  cat /etc/fstab
+  454  fdisk -l
+  455  cd
+  456  clear
+  457  vgs
+  458  lvs
+  459  pvs
+  460  vgextend vgtest /dev/sda1
+  461  lvextend -L +1G /dev/mapper/vgtest-lvtest 
+  462  nano /etc/fstab
+  463  cat /etc/fstab
+  464  vgs
+  465  lvremove -f lvtest
+  466  lvremove -f vgtest
+  467  unmount /test/
+  468  umount /test
+  469  df -h
+  470  lvremove -f vgtest
+  471  vgchange -an vgtest
+  472  vgremove vgtest
+  473  pvs
+  474  pvremove /dev/sda1
+  475  pvs
+  476  fdisk -l
+  477  vgs
+  478  clear
+  479  fdisk -l
+  480  clea
+  481  clear
+  482  fdisk -l
+  483  clear
+  484  fdisk -l
+  485  clear
+  486  fdisk -l
+  487  clear
+  488  fdisk -l
+  489  cd /home/
+  490  ll
+  491  cd
+  492  useradd Accenture -u 500 -g 700 -d /home/test
+  493  groupadd -g 700
+  494  grep :700: /etc/group
+  495  cat /etc/group
+  496  groupadd -g 700
+  497  groupadd -g 700 test
+  498  useradd Accenture -u 500 -g 700 -d -m /home/test
+  499  useradd Accenture -u 500 -g 700 -m -d /home/test
+  500  cat /etc/shadow
+  501  id -a Accenture
+  502  su - Accenture
+  503  passwd Accenture
+  504  cat /etc/shadow
+  505  ll
+  506  cd /home/
+  507  ll
+  508  cd test
+  509  ll
+  510  cat .profile 
+  511  clear
+  512  passwd -l Accenture
+  513  cat /etc/shadow
+  514  cd
+  515  cd /home/
+  516  ll
+  517  cd test1
+  518  ll
+  519  cd test
+  520  ll
+  521  cd ..
+  522  nano abc.txt
+  523  less abc.txt
+  524  chmod +644 abc.txt
+  525  ll
+  526  chown Accenture:test abc.txt
+  527  ll
+  528  fdisk -l
+  529  clear
+  530  cd
+  531  fdisk -l
+  532  fdisk /dev/sdd
+  533  fdisk -ll
+  534  pvs
+  535  pvcreate /dev/sdd1
+  536  pvs
+  537  vgcreate vgtest /dev/sdd1
+  538  vgs
+  539  df-h
+  540  df -h
+  541  lvs
+  542  lvcreate -n lvtest -L 4G vgtest
+  543  lvs
+  544  mkfs.xfs /dev/mapper/vgtest-lvtest 
+  545  ll
+  546  mount /dev/mapper/vgtest-lvtest /test/
+  547  ll
+  548  df- h
+  549  df -h
+  550  vi /etc/fstab
+  551  cat /etc/fstab
+  552  df -h
+  553  vgs
+  554  lvextend -l +2G /dev/mapper/vgtest-lvtest 
+  555  lvextend -L +2G /dev/mapper/vgtest-lvtest 
+  556  df -h
+  557  xfs_growfs /dev/mapper/vgtest-lvtest 
+  558  df -h
+  559  history > /home/test1/hist.txt
