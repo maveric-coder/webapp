@@ -6,7 +6,7 @@
 ```sh
 git clone https://github.com/maveric-coder/webapp
 cd webapp
-``
+```
 2. Build docker image
 ```sh
 docker build -t webapp:v1 .
