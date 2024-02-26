@@ -17,8 +17,6 @@ pipeline {
         }
       }
     }
-    stage('Pushing Image') {
-    }
     stage('Deploying portfolio container to Kubernetes') {
       steps {
         script {
