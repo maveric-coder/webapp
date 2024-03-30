@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: javawebappdeployment
+  name: portfolio
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: javawebapp
+      app: portfolio
   template:
     metadata:
       labels:
-        app: javawebapp
+        app: portfolio
     spec:
       containers:
-      - image: dockerp2pro/java-web-app-demo
-        name: javawebappcontainer
+      - image: anand2909/portfolio:v1
+        name: portfolio
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         #resources:
         #  requests:
         #    cpu: 100m
@@ -29,11 +29,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: javawebapp-service
+  name: portfolio-service
 spec:
   type: LoadBalancer		#ClusterIP
   ports:
     - port: 80
       targetPort: 8080
   selector:
-    app: javawebapp
+    app: portfolio
